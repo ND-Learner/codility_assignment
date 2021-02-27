@@ -1,0 +1,2 @@
+# codility_assignment
+test
