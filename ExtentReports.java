@@ -16,7 +16,7 @@ public class ExtentReports {
         htmlReporter = new ExtentHtmlReporter(System.getProperty("/target") + "/test-output/testReport.html");
 
         report = new ExtentReports();
-     //   report.attachReporter(htmlReporter);
+     //   for reporting path
 
         htmlReporter = new ExtentHtmlReporter("/target"
                 + "/ExtentReport.html");
