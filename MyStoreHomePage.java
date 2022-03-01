@@ -29,9 +29,14 @@ public class MyStoreHomePage {
         /*WebDriverWait wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOf(tshirt_tab));
         wait.until(ExpectedConditions.elementToBeClickable(tshirt_tab));*/
-
+         try {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", tshirt_tab);
+         }
+       catch(Exception e){
+          wait.until( ExpectedConditions.elementToBeClickable(tshirt_tab);
+          tshirt_tab.click();
+       }
        // tshirt_tab.click();
     }
 
