@@ -29,6 +29,10 @@ public class PaymentPage {
 
     public void click_checkout(){
         proceedToCheckout.click();
+        
+        String actualTitle = driver.getTitle();
+        String expectedTitle = "Checkout tile";
+        Assert.assertEquals(expectedTitle, actualTitle);
     }
 
     public void click_back_to_orders(){
